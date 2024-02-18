@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h2>Sign Up</h2>
+    <form id="signUpForm" onsubmit="return validateSignUp()">
+        <input type="text" id="signupUsername" placeholder="Username">
+        <input type="password" id="signupPassword" placeholder="Password">
+        <input type="password" id="confirmPassword" placeholder="Confirm Password">
+        <input type="email" id="signupEmail" placeholder="Email">
+        <input type="text" id="signupFullName" placeholder="Full Name">
+        <input type="number" id="signupAge" placeholder="Age">
+        <input type="text" id="signupAddress" placeholder="Address">
+        <input type="text" id="signupCity" placeholder="City">
+        <input type="submit" value="Sign Up">
+    </form>
+    <p>Already Registered? <a href="signin.html" style="color: white;">Log In!</a></p>
+    <div id="signUpMessage" class="success-message"></div>
+    <script src="validation.js"></script>
+</div>
+</body>
+</html>
